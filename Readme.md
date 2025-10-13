@@ -1,11 +1,11 @@
 # TIENDA ONLINE DM
 
 ## Descripción
-Este repositorio contiene el desarrollo de LOvEL SHOP, una tienda online diseñada para ofrecer una experiencia de compra moderna, responsiva y funcional. El proyecto incluye tanto el frontend como el backend integrados en un mismo repositorio, desarrollado como parte de una iniciativa individual utilizando metodologías ágiles.
+Este repositorio contiene el desarrollo de DM, una tienda online diseñada para ofrecer una experiencia de compra moderna, responsiva y funcional
 
 ## Características Principales
-- Registro e inicio de sesión de usuarios con autenticación.
-- Catálogo de productos por categorías.
+- Catálogo de productos: Visualización organizada con imágenes, descripciones, precios y stock.
+- Autenticación de usuarios: Registro, inicio de sesión y gestión del perfil del cliente.
 - Carrito de compras funcional con sistema de pedidos.
 
 ## Tecnologías
@@ -21,8 +21,8 @@ es de caracter individual, archivos de procesos en la raiz del directorio, asign
 en sus respectivas carpetas.
 
 ## Diseño
-- **Figma:** [https://www.figma.com/design/uHOo5HiVdv8DNJB2gU36GF/TIENDA-ONLINE?node-id=0-1&t=FK2FDoebV1CBFVkO-1]
-- **Trello:** [https://trello.com/b/KMKuzPyQ/app-tienda-online]
+- **Figma:** [https://www.figma.com/design/n954V6mJDTTvFjYWYcQrfk/TIENDA-ONLINE?node-id=77-12&p=f&t=2Jmv9MP4f6hs8SIu-0]
+- **Trello:** [https://trello.com/b/djHdGpTc/app-tienda-online]
 
 ## Gestión Ágil
 - Metodología: Scrum
@@ -30,9 +30,9 @@ en sus respectivas carpetas.
 - Herramienta de gestión: Trello
 
 ## Equipo
-- **Scrum Master:** Angel Gonzales
+- **Scrum Master:** DEYVIS
 - **Product Owner:** Magenta Paredes
-- **Developers:** Angel Gonzales
+- **Developers:** DEYVIS
 
 ## Instalación y Uso
 ```bash
