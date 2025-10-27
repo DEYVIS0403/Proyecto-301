@@ -4,6 +4,7 @@ import dotenv from 'dotenv';
 import userRoutes from './routes/userRoutes.js';
 import swaggerUi from 'swagger-ui-express';
 import { swaggerSpec } from './swagger.js';
+import emailRoutes from './routes/emailRoutes.js';
 
 dotenv.config();
 
@@ -27,6 +28,7 @@ app.get('/', (req, res) => {
 
 // Rutas de la API
 app.use('/api/users', userRoutes);
+app.use('/api/email', emailRoutes);
 
 // Iniciar servidor
 app.listen(PORT, () => {

@@ -1,19 +1,5 @@
-// services/emailService.js
-import nodemailer from 'nodemailer';
-import dotenv from 'dotenv';
+import { transporter } from "../config/emailConfig.js";
 
-dotenv.config();
-
-// Configuración del transporte de correo
-const transporter = nodemailer.createTransport({
-  service: 'gmail',
-  auth: {
-    user: process.env.EMAIL_USER,
-    pass: process.env.EMAIL_PASSWORD,
-  },
-});
-
-// Función para enviar correos
 export const sendEmail = async (to, subject, text) => {
   try {
     await transporter.sendMail({
