@@ -2,25 +2,34 @@ import express from 'express';
 import cors from 'cors';
 import dotenv from 'dotenv';
 import userRoutes from './routes/userRoutes.js';
+import swaggerUi from 'swagger-ui-express';
+import { swaggerSpec } from './swagger.js';
 
 dotenv.config();
 
 const app = express();
 const PORT = process.env.PORT || 3000;
 
+// Middleware
 app.use(cors());
+app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
-app.use(express.urlencoded({extended:true}));
 
-app.get('/',(req, res) => {
-    res.json({
-        message:'Api corriendo correctamente'
-    });
+// Documentación Swagger
+app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerSpec));
+
+// Ruta raíz
+app.get('/', (req, res) => {
+  res.json({
+    message: 'API corriendo correctamente 🚀'
+  });
 });
 
-//Rutas que deseo usar
-app.use('/api/users',userRoutes);
+// Rutas de la API
+app.use('/api/users', userRoutes);
 
+// Iniciar servidor
 app.listen(PORT, () => {
-    console.log("Servidor corriendo exitosamente 🚀")
-})
+  console.log(`Servidor corriendo exitosamente en el puerto ${PORT} 🚀`);
+});
+
