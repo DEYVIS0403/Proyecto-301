@@ -1,13 +1,9 @@
-import nodemailer from 'nodemailer';
-import dotenv from 'dotenv';
-
+import nodemailer from "nodemailer";
+import dotenv from "dotenv";
 dotenv.config();
 
-// Configuración del transporte de correo
 export const transporter = nodemailer.createTransport({
-  service: 'gmail',
-  auth: {
-    user: process.env.EMAIL_USER,
-    pass: process.env.EMAIL_PASSWORD,
-  },
+  service: "gmail",
+  auth: { user: process.env.EMAIL_USER, pass: process.env.EMAIL_PASSWORD },
 });
+

@@ -8,10 +8,8 @@ export const sendEmail = async (to, subject, text) => {
       subject,
       text,
     });
-
     return { success: true };
   } catch (error) {
-    console.error('Error al enviar correo:', error);
     return { success: false, error };
   }
 };

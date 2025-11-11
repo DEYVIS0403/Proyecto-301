@@ -1,6 +1,7 @@
 import { sendEmail } from "../services/emailService.js";
+
 export const registerUser = async (req, res) => {
-  const { email, name } = req.body; // ... crear usuario en BD
+  const { email, name } = req.body; 
   await sendEmail(
     email,
     "Bienvenido",
